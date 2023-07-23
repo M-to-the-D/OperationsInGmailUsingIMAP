@@ -1,8 +1,8 @@
 from secret import *           #USER NAME AND PASSWORD IS IN secret.py
 import smtplib
-fromaddr = 'uchiha.md21@gmail.com'
-toaddrs = input("Enter To address: ")#'uchiha.md21@gmail.com'
-sub = input("Enter subject:  ")#"COMPUTER NETWORKS"
+fromaddr = 'md@gmail.com'
+toaddrs = input("Enter To address: ")
+sub = input("Enter subject:  ")
 body=input("Enter body: ")#'Hello! Test run successfully done.'
 username = un
 password = pwd
