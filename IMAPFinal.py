@@ -59,7 +59,7 @@ while choice!=9:
     #Delete an email
     elif choice==7:
         imap_server.select('INBOX')
-        typ, data = imap_server.search(None, '(FROM "cde.m@gmail.com" SUBJECT "test")')
+        typ, data = imap_server.search(None, '(FROM "cde@gmail.com" SUBJECT "test")')
         for num in data[0].split():
             imap_server.store(num, '+FLAGS', r'(\Deleted)')
         imap_server.expunge()
