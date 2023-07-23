@@ -4,14 +4,13 @@ import smtplib
 import imghdr
 from email.message import EmailMessage
 
-fromaddr = 'uchiha.md21@gmail.com'
-#toaddrs = 'uchiha.md21@gmail.com'
+fromaddr = 'md@gmail.com'
 username = un
 password = pwd
-targets = ['uchiha.md21@gmail.com', 'dhikshita.m@gmail.com']
+targets = ['md@gmail.com', 'abc@gmail.com']
 
 msg = EmailMessage()
-msg['Subject'] = 'COMPUTER NETWORKS'
+msg['Subject'] = 'TEST RUN'
 msg['From'] = fromaddr
 msg['To'] = ','.join(targets)
 msg.set_content('SMTP')
