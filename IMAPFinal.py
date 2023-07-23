@@ -1,7 +1,7 @@
 import imaplib
 import email
 from secret import *
-emailID='akshya.mu.19@gmail.com'#'uchiha.md21@gmail.com'
+emailID='abc@gmail.com'
 username = un
 password = pwd
 mail_server = 'imap.gmail.com'
@@ -48,7 +48,7 @@ while choice!=9:
     #Retrieve specific email
     elif choice==6:
         imap_server.select('INBOX')
-        result, data = imap_server.search(None, '(FROM "dhikshita.m@gmail.com" SUBJECT "test")' )
+        result, data = imap_server.search(None, '(FROM "cde@gmail.com" SUBJECT "test")' )
         ids = data[0] 
         id_list = ids.split() 
         latest_email_id = id_list[-1]
@@ -59,7 +59,7 @@ while choice!=9:
     #Delete an email
     elif choice==7:
         imap_server.select('INBOX')
-        typ, data = imap_server.search(None, '(FROM "dhikshita.m@gmail.com" SUBJECT "test")')
+        typ, data = imap_server.search(None, '(FROM "cde.m@gmail.com" SUBJECT "test")')
         for num in data[0].split():
             imap_server.store(num, '+FLAGS', r'(\Deleted)')
         imap_server.expunge()
