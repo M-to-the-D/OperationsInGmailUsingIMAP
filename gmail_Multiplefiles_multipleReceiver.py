@@ -3,19 +3,18 @@ import smtplib
 from email.message import EmailMessage
 import imghdr
 import shutil, os
-fromaddr = 'uchiha.md21@gmail.com'
-#toaddrs = 'uchiha.md21@gmail.com'
+fromaddr = 'md@gmail.com'
 username = un
 password = pwd
-targets = ['uchiha.md21@gmail.com', 'dhikshita.m@gmail.com', 'bashidshaneilhussain@gmail.com']
+targets = ['md@gmail.com', 'abc@gmail.com', 'bsh@gmail.com']
 
 msg=EmailMessage()
-msg['Subject'] = 'COMPUTER NETWORKS'
+msg['Subject'] = 'TEST'
 msg['From'] = fromaddr
 msg['To'] = ','.join(targets)
-msg.set_content('Welcome to Sastra University..')
+msg.set_content('Welcome..')
 
-files=['SASTRA.jpg', 'Sastra2.jpeg', 'softSkillsSpeech.pdf', 'Eduminatti.docx']
+files=['abc.jpg', 'cde.jpeg', 'aaa.pdf', 'eg.docx']
 
 for i in files:
     fileName,fileExtension = os.path.splitext(i)
